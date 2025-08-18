@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4283,No Action,0.85,High sender domain reputation 0.77 with sensitive data request but minimal threat indicators. Clean behavioral scores and valid SSL with proper authentication suggest legitimate business inquiry
+D4284,Malicious,0.95,Sender known malicious with packer detected, extremely high metadata suspicious score 0.99, high AMSI suspicion score 0.40, meeting request type, and multiple security failures confirm active threat
+D4285,Warning,0.78,Sender known malicious with YARA match count 1, high sandbox execution time 179.6 seconds, but no specific request type. Mixed authentication results suggest monitoring approach
+D4286,No Action,0.82,High temp email likelihood 0.37 but minimal threat indicators throughout. URL count 4 but no malicious behaviors detected and valid SSL suggest bulk messaging
+D4287,Malicious,0.92,Sender known malicious with high metadata suspicious score 0.75, executable attachment, high exfiltration behavior 0.53, legal threat request type, and self-signed SSL confirm threat
+D4288,Warning,0.80,Sender known malicious with bulk message indicator, link click request type, but relatively low behavioral scores. Multiple embedded files warrant monitoring
+D4289,No Action,0.88,Bank detail update request with minimal threat indicators throughout. Clean behavioral scores and valid SSL suggest legitimate business communication
+D4290,Malicious,0.93,Sender known malicious with IOC count 3, high AMSI suspicion score 0.93, exploit pattern detected, VPN/MFA reset request, and PowerShell execution indicate sophisticated attack
+D4291,Warning,0.78,Sender known malicious with high metadata suspicious score 0.37, embedded files count 2, wire transfer request, but mixed behavioral scores warrant monitoring
+D4292,Warning,0.80,Sender known malicious with exploit pattern detected, high content spam score 0.78, document download request, but low overall malicious indicators suggest cautious approach
+D4293,Warning,0.75,URL count 1 with high content spam score 0.44 but minimal active threat indicators. Authentication concerns require monitoring
+D4294,No Action,0.85,Sensitive data request with failed authentication but minimal threat indicators and clean behavioral scores throughout suggest false positive
+D4295,Warning,0.78,Sender known malicious with executable attachment, expired SSL, meeting request type, but low overall behavioral scores warrant monitoring
+D4296,Warning,0.80,Sender known malicious with network call on open detected, URL count 3, but no specific request type and mixed scores suggest monitoring
+D4297,No Action,0.88,High HTML text ratio 1.1 but minimal threat indicators throughout. Clean authentication and no request types indicate low risk
+D4298,Malicious,0.90,Sender known malicious with high behavioral sandbox score 0.57, embedded files, high sandbox execution time 84 seconds, legal threat request, and self-signed SSL confirm threat
+D4299,Malicious,0.88,Sender known malicious with malicious components count 1, YARA match 1, macro-enabled document, high exfiltration behavior 0.86, link click request, and high URL reputation 0.98 confirm threat
+D4300,No Action,0.82,High temp email likelihood 0.18 with bank detail update but minimal malicious indicators and valid SSL suggest legitimate communication
+D4301,Malicious,0.92,Sender known malicious with DMARC enforced, high metadata suspicious score 0.59, malicious components 3, YARA match 1, VPN/MFA reset request, PowerShell execution, and self-signed SSL
+D4302,Malicious,0.90,Sender known malicious with malicious file hash detected, high metadata suspicious score 0.74, embedded files, wire transfer request, and image-only email format confirm financial fraud
+D4303,Warning,0.78,Sender known malicious with YARA match count 1, ActiveX objects detected, high sandbox execution time 156 seconds, document download request warrant monitoring
+D4304,No Action,0.85,Self-signed SSL concerning but minimal threat indicators and no request types throughout. Clean behavioral scores suggest legitimate traffic
+D4305,Warning,0.75,Spoofing detected with sensitive data request, URL count 4, final URL known malicious, but minimal other threat indicators suggest monitoring
+D4306,Warning,0.80,Sender known malicious with high exfiltration behavior 0.84, meeting request type, URL count 4, expired SSL, but mixed scores warrant monitoring
+D4307,Warning,0.78,Sender known malicious with urgency keywords present, high sandbox execution time 6 seconds, but no specific request type and mixed authentication results
+D4308,No Action,0.88,DMARC enforced with minimal threat indicators and no request types. Clean behavioral scores throughout suggest legitimate communication
+D4309,Warning,0.80,Sender known malicious with high metadata suspicious score 0.34, embedded files count 3, legal threat request type, but mixed behavioral scores warrant monitoring
+D4310,Warning,0.78,Sender known malicious with high temp email likelihood 0.05, high exfiltration behavior 0.73, link click request, but mixed authentication results suggest monitoring
+D4311,Warning,0.75,High temp email likelihood 0.74 with urgency keywords, bank detail update request, self-signed SSL, but minimal active threat indicators warrant monitoring
+D4312,Malicious,0.95,Sender known malicious with extremely high metadata suspicious score 0.91, high behavioral scores 0.94, malicious components 1, VPN/MFA reset request, and PowerShell execution confirm threat
+D4313,Malicious,0.88,Sender known malicious with high behavioral sandbox score 0.65, urgency keywords present, wire transfer request, high content spam score 0.99, and revoked SSL confirm threat
+D4314,Warning,0.78,Sender known malicious with high metadata suspicious score 0.21, document download request, revoked SSL, but mixed behavioral scores warrant monitoring
+D4315,Warning,0.75,High temp email likelihood 0.34 with reply path known malicious, bulk message indicator, but minimal other threat indicators suggest monitoring
+D4316,No Action,0.85,High sender domain reputation 0.74 with sensitive data request but minimal threat indicators and valid SSL suggest legitimate business inquiry
+D4317,Warning,0.80,Sender known malicious with spoofing detected, packer detected, high temp email likelihood 0.29, meeting request type, but mixed scores warrant monitoring
+D4318,Warning,0.78,Sender known malicious with high temp email likelihood 0.53, malicious attachment count 1, but no specific request type and mixed authentication suggest monitoring
+D4319,No Action,0.85,Minimal threat indicators throughout with clean behavioral scores and no request types indicate low risk profile
+D4320,Malicious,0.92,Sender known malicious with extremely high sender domain reputation 0.95, high exfiltration behavior 0.64, legal threat request type, self-signed SSL, and high URL rendering behavior confirm threat
+D4321,Warning,0.78,Sender known malicious with link click request, URL count 2, high content spam score 0.39, high URL reputation 0.58, but mixed behavioral scores warrant monitoring
+D4322,No Action,0.85,High temp email likelihood 0.28 with bank detail update, URL count 4, but minimal malicious indicators and valid SSL suggest legitimate communication
+D4323,Warning,0.80,Sender known malicious with high temp email likelihood 0.84, high AMSI suspicion score 0.79, VPN/MFA reset request, embedded files count 2, PowerShell execution warrant monitoring
+D4324,Malicious,0.92,Sender known malicious with spoofing detected, YARA match count 3, high behavioral scores 0.50, wire transfer request, final URL known malicious, and high sandbox execution time confirm threat
+D4325,Malicious,0.93,Sender known malicious with extremely high metadata suspicious score 0.98, executable attachment, network call on open, urgency keywords, document download request, and image-only format confirm threat
+D4326,No Action,0.88,High return path reputation 0.69 but minimal threat indicators throughout. Clean behavioral scores and valid SSL indicate low risk
+D4327,Warning,0.75,DMARC enforced with sensitive data request, expired SSL, image-only email, but minimal other threat indicators suggest monitoring
+D4328,Warning,0.78,Sender known malicious with return path mismatch, high return path reputation 0.95, meeting request type, but low behavioral scores warrant monitoring
+D4329,Warning,0.80,Sender known malicious with high metadata suspicious score 0.73, high behavioral scores, URL count 4, self-signed SSL, but no specific request type warrant monitoring
+D4330,No Action,0.88,Minimal threat indicators throughout with clean behavioral scores and valid SSL indicate low risk profile
+D4331,Malicious,0.90,Sender known malicious with malicious components count 1, IOC count 8, high exfiltration behavior 0.87, embedded files count 3, legal threat request, and urgency keywords confirm threat
+D4332,Malicious,0.88,Sender known malicious with packer detected, macro-enabled document, high exfiltration behavior 0.92, urgency keywords, link click request, final URL known malicious, and high content spam score confirm threat

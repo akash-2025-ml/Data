@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D3683,No Action,0.82,Legal threat with moderate temp email likelihood (0.45) but very low metadata score (0.003) and minimal threat indicators. Failed DKIM but overall clean profile suggests legitimate legal communication.
+D3684,Malicious,0.91,Link click phishing with high behavioral sandbox score (0.79) very high exfiltration score (0.78) macro-enabled document and three malicious components detected. Sophisticated attack with evasive capabilities.
+D3685,Spam,0.78,Bank detail update with sender spoofing detected but minimal actual threats. Very low metadata score and no URLs present. Pattern suggests spam campaign rather than targeted attack.
+D3686,Malicious,0.89,VPN/MFA reset with high metadata score (0.11) high behavioral sandbox score (0.51) high AMSI score (0.50) domain known malicious. Clear credential harvesting attempt with dangerous processes.
+D3687,Malicious,0.85,Wire transfer fraud with high temp email likelihood (0.41) high exfiltration score (0.48) QR code detected. Failed authentication and pattern indicates BEC wire transfer scam.
+D3688,Malicious,0.93,Document download with packer detected high metadata score (0.59) very high exfiltration score (0.91) and QR code detected. Advanced malware campaign with evasion techniques.
+D3689,Warning,0.78,Email with return path known malicious flag and high site similarity (0.55) requires monitoring. While threat scores are low the known malicious return path presents elevated risk.
+D3690,Warning,0.75,Sensitive data request with reply path known malicious and failed SPF/DKIM authentication. While other threats minimal the sensitive data request combined with malicious reply path requires caution.
+D3691,Warning,0.74,Meeting request with moderate exfiltration score (0.21) but very low threat scores overall. Failed DKIM suggests compromised sender rather than direct malicious activity.
+D3692,Malicious,0.87,Email with sender spoofing packer detected very high metadata score (0.83) return path known malicious YARA matches. Certificate mismatch confirms evasive attack.
+D3693,No Action,0.83,Clean email with high sender reputation (0.58) but very low threat scores throughout. No malicious behaviors detected appears legitimate.
+D3694,Malicious,0.88,Legal threat with ActiveX objects detected very high exfiltration score (0.93) high behavioral score (0.24). Pattern indicates malware delivery through legal social engineering.
+D3695,Malicious,0.90,Link click phishing with packer detected very high sender reputation (0.78) high exfiltration score (0.81) high metadata score (0.18). Sophisticated brand impersonation attack.
+D3696,Spam,0.77,Bank detail update from return path known malicious with SMTP IP geo high (0.60) failed SPF. Pattern indicates spam bank scam attempt.
+D3697,Warning,0.75,VPN/MFA reset with very high sender reputation (0.91) high content spam score (0.53) but minimal actual threats. Four URLs require monitoring.
+D3698,Malicious,0.95,Wire transfer with extremely high metadata score (0.999) very high exfiltration score (0.96) QR code detected. Critical malware with data theft capabilities.
+D3699,Malicious,0.86,Document download with high metadata score (0.27) four YARA matches high exfiltration score (0.72) self-signed certificate QR code detected. Advanced persistent threat.
+D3700,No Action,0.79,Clean email with SMTP IP geo very high (0.998) but minimal threat scores. Certificate mismatch but no malicious content detected.
+D3701,No Action,0.81,Sensitive data request with high site similarity (0.97) but very low threat scores throughout. Appears legitimate despite concerning visual similarity.
+D3702,Malicious,0.84,Meeting request with high metadata score (0.77) exploit pattern detected return path known malicious. Pattern indicates meeting-based social engineering malware.
+D3703,Warning,0.73,Email with high URL reputation (0.26) but minimal other threats. Pattern suggests monitoring rather than immediate action.
+D3704,No Action,0.86,Very clean email with minimal risk indicators. SMTP IP reputation very high (0.75) but no malicious behaviors detected.
+D3705,Malicious,0.92,Legal threat from sender known malicious with high metadata score (0.41) high AMSI score (0.78) QR code detected site similarity very high (0.93). Advanced phishing attack.
+D3706,Warning,0.76,Link click with reply path known malicious IOC detected high content spam score (0.59) but minimal actual threats. Six URLs require caution.
+D3707,No Action,0.84,Bank detail update with moderate temp email likelihood (0.08) but very low threat scores. Two URLs clean no malicious behaviors.
+D3708,Malicious,0.88,VPN/MFA reset with very high temp email likelihood (0.62) high exfiltration score (0.77) user marked as spam QR code detected. Clear credential theft attempt.
+D3709,Warning,0.72,Wire transfer with high metadata score (0.33) self-signed certificate but low other indicators. Three URLs require monitoring.
+D3710,Warning,0.79,Document download with extremely high temp email likelihood (0.998) ActiveX objects detected long sandbox execution time (136 seconds). Suspicious but expired certificate.
+D3711,Spam,0.81,Email with high temp email likelihood (0.18) bulk message unsubscribe link high content spam score (0.67). Classic spam indicators.
+D3712,Spam,0.83,Sensitive data request with high temp email likelihood (0.78) certificate mismatch. Pattern indicates spam phishing for sensitive information.
+D3713,Malicious,0.90,Meeting request with high metadata score (0.24) very high exfiltration score (0.91) three URLs high content spam score (0.78). Sophisticated phishing campaign.
+D3714,Malicious,0.91,Email with very high temp email likelihood (0.87) malicious attachment count SMTP IP known malicious very high exfiltration score (0.91). Critical malware threat.
+D3715,No Action,0.77,Clean email with high sender reputation (0.79) QR code detected but very low threat scores. Likely legitimate communication.
+D3716,Malicious,0.86,Legal threat from sender known malicious with high exfiltration score (0.38) four URLs. Clear phishing attempt using legal pretense.
+D3717,Warning,0.78,Link click with executable attachment high metadata score (0.25) high exfiltration score (0.50) self-signed certificate. Suspicious but requires monitoring.
+D3718,No Action,0.82,Bank detail update with very high sender reputation (0.81) but minimal threat scores. One URL clean appears legitimate.
+D3719,Malicious,0.87,VPN/MFA reset with packer detected high metadata score (0.27) high AMSI score (0.32) three embedded files. Clear credential harvesting malware.
+D3720,Malicious,0.89,Wire transfer with high AMSI score (0.78) very high exfiltration score (0.90) self-signed certificate. Pattern indicates BEC wire transfer fraud.
+D3721,Warning,0.76,Document download with YARA matches moderate metadata score (0.10) but low other indicators. Two embedded files require caution.
+D3722,No Action,0.80,Very clean email with self-signed certificate but minimal threat scores. High site similarity (0.52) but no malicious behaviors.
+D3723,No Action,0.75,Sensitive data request with reply path different from sender unsubscribe link but very low threat scores. Likely legitimate.
+D3724,Warning,0.79,Meeting request with seven URLs high site similarity (0.36) but minimal actual threats. Requires monitoring for potential social engineering.
+D3725,Warning,0.74,Email with moderate temp email likelihood (0.13) high AMSI score (0.34) but low other indicators. Failed authentication suggests compromised sender.
+D3726,Spam,0.82,Email with high temp email likelihood (0.37) QR code detected failed authentication high URL reputation (0.63). Spam campaign indicators.
+D3727,Malicious,0.91,Legal threat with high metadata score (0.47) YARA match revoked certificate high site similarity (0.67). Advanced phishing with stolen certificate.
+D3728,Malicious,0.88,Link click with high metadata score (0.52) high exfiltration score (0.53) expired certificate QR code detected. Clear phishing with data theft capabilities.
+D3729,No Action,0.83,Bank detail update with self-signed certificate but very low threat scores throughout. Likely legitimate but poorly configured.
+D3730,Malicious,0.85,VPN/MFA reset with high behavioral score (0.12) high AMSI score (0.49) very high exfiltration score (0.95). Clear credential theft attempt.
+D3731,Malicious,0.87,Wire transfer with very high temp email likelihood (0.76) reply path known malicious high SMTP IP reputation (0.90). Classic BEC wire transfer scam.
+D3732,Malicious,0.93,Document download with YARA matches high behavioral sandbox score (0.81) high AMSI score (0.79) high exfiltration score (0.69). Advanced malware with data exfiltration.

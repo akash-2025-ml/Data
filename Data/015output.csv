@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4133,Malicious,0.84,Link click request with SMTP IP known malicious and domain known malicious. Failed authentication trinity with high URL rendering score confirms phishing.
+D4134,Malicious,0.88,VBScript/JavaScript detected with extreme sandbox execution time (185.35). Failed DKIM/DMARC with high spam content (0.929) confirms script-based malware.
+D4135,Malicious,0.88,Wire transfer with malicious attachment detected. Despite moderate metadata score, malicious attachment confirms BEC with malware.
+D4136,No Action,0.73,Wire transfer request with reply path known malicious but clean attachments. Valid SSL with failed DKIM/DMARC suggests configuration issues.
+D4137,Malicious,0.96,Known malicious sender with extreme exfiltration score (0.978) and metadata score (0.804). Gift card request with PowerShell execution confirms fraud.
+D4138,Malicious,0.92,Known malicious sender with reply path known malicious and unscannable attachment. High exfiltration score (0.816) with Excel execution confirms attack.
+D4139,Malicious,0.87,Sender spoofing with three YARA matches and extreme exfiltration score (0.861). PowerShell execution with exploit pattern detected confirms malware.
+D4140,No Action,0.76,Invoice verification with self-signed SSL but clean behavioral profile. Low risk scores with failed SPF suggest outdated infrastructure.
+D4141,Malicious,0.90,High temporary email (0.982) with unscannable attachment and seven IOCs. Reply path known malicious with PowerShell execution confirms attack.
+D4142,Malicious,0.85,High temporary email (0.855) with exploit pattern detected and domain known malicious. PowerShell and RegSvr32 execution confirms malware delivery.
+D4143,No Action,0.74,Wire transfer with clean behavioral profile. Valid SSL with passing SPF despite failed DMARC suggests legitimate transaction.
+D4144,No Action,0.78,Clean profile with valid SSL and unsubscribe link present. Failed SPF but passing DKIM/DMARC indicates marketing email.
+D4145,No Action,0.81,Minimal risk indicators with valid SSL. Softfail SPF with failed DMARC but clean attachments suggests email configuration issues.
+D4146,No Action,0.83,Extremely low risk scores across all indicators. Valid SSL with passing SPF indicates legitimate communication.
+D4147,Malicious,0.83,Known malicious sender with gift card request. Despite clean behavioral profile, sender reputation alone confirms threat actor.
+D4148,Malicious,0.89,Extreme metadata score (0.726) with wire transfer request. Revoked SSL certificate with failed DMARC confirms financial fraud attempt.
+D4149,Malicious,0.91,Extreme metadata score (0.747) with document download and unsubscribe link. Failed DMARC with URL detected confirms phishing campaign.
+D4150,No Action,0.77,Sender spoofing detected but clean attachments with three URLs. Valid SSL with passing SPF suggests false positive detection.
+D4151,No Action,0.79,Sensitive data request with four URLs but clean behavioral profile. Valid SSL with failed SPF/DMARC appears to be configuration issue.
+D4152,Warning,0.76,Meeting request with embedded file but moderate scores. Valid SSL with passing SPF warrants monitoring despite no immediate threat.
+D4153,Malicious,0.84,Known malicious sender with high temporary email (0.580). Expired SSL with failed DMARC and moderate behavioral scores confirms threat.
+D4154,No Action,0.82,Clean behavioral profile with valid SSL. Failed SPF/DKIM/DMARC but minimal risk indicators suggest email system misconfiguration.
+D4155,Malicious,0.93,Seven YARA matches with legal threat targeting executive. Self-signed SSL with four URLs and exploit pattern confirms impersonation attack.
+D4156,Malicious,0.94,High temporary email (0.950) with extreme sandbox score (0.891). Malicious attachment with self-signed SSL confirms link-based attack.
+D4157,No Action,0.75,Bank detail update with clean attachments. Valid SSL with failed SPF/DMARC but low risk scores suggest legitimate communication.
+D4158,Malicious,0.86,High return path reputation issues (0.856) with VPN/MFA reset. Self-signed SSL with PowerShell execution confirms credential theft.
+D4159,Warning,0.81,Wire transfer with moderate exfiltration score (0.533). Valid SSL but failed SPF with DMARC temperror warrants careful review.
+D4160,Malicious,0.90,Extreme exfiltration score (0.935) with document download. AMSI detection (0.359) with three embedded files confirms malware delivery.
+D4161,No Action,0.84,Clean profile with valid SSL and minimal risk indicators. Passing SPF/DMARC confirms legitimate communication.
+D4162,No Action,0.73,Sensitive data request with high return path reputation (0.986) but clean attachments. Valid SSL with failed SPF suggests false positive.
+D4163,Warning,0.82,Meeting request with urgency keywords and AMSI detection (0.255). Valid SSL but moderate scores warrant verification.
+D4164,Malicious,0.88,Three YARA matches with extreme exfiltration score (0.898). Domain known malicious with embedded file confirms attack.
+D4165,No Action,0.76,Clean behavioral profile with valid SSL. Failed authentication but low risk scores suggest configuration issues.
+D4166,Malicious,0.92,Extreme AMSI score (0.894) with legal threat and three URLs. Domain reputation issues confirm executive impersonation.
+D4167,Malicious,0.95,Seven YARA matches with extreme sandbox score (0.986) and AMSI detection (0.904). Domain known malicious confirms advanced malware.
+D4168,Warning,0.70,Sender spoofing with sender spoofing detected but clean attachments. Bulk message indicator suggests spam rather than malware.
+D4169,Warning,0.78,VPN/MFA reset with embedded file and four URLs. Valid SSL but moderate exfiltration score warrants monitoring.
+D4170,Malicious,0.91,Sender spoofing with reply path known malicious and ActiveX objects. Wire transfer request confirms business email compromise.
+D4171,Warning,0.77,High sender reputation (0.601) but document download with high return path issues. Valid SSL suggests monitoring needed.
+D4172,Spam,0.83,User marked as spam before with certificate mismatch. Clean attachments but pattern indicates unwanted bulk email.
+D4173,No Action,0.71,Sensitive data request with domain tech stack match but clean profile. Valid SSL with minimal risk confirms legitimate inquiry.
+D4174,Malicious,0.93,Two YARA matches with extreme sandbox score (0.854). Meeting request with moderate behavioral scores confirms social engineering.
+D4175,Malicious,0.89,Six YARA matches with self-signed SSL and urgency keywords. Embedded file with failed authentication confirms malware.
+D4176,No Action,0.74,Certificate mismatch but clean behavioral profile. Valid SSL with passing SPF suggests infrastructure issue.
+D4177,Malicious,0.86,Domain known malicious with extreme exfiltration score (0.983). Legal threat with failed authentication confirms attack.
+D4178,Malicious,0.94,Four YARA matches with extreme metadata score (0.591) and sandbox score (0.502). Domain tech stack match with link click confirms phishing.
+D4179,No Action,0.80,Bank detail update with reply path difference but clean profile. Valid SSL with passing SPF suggests legitimate transaction.
+D4180,Warning,0.79,VPN/MFA reset with self-signed SSL and PowerShell execution. Moderate scores with URL detected warrant verification.
+D4181,Malicious,0.90,Packer detected with malicious attachment and extreme exfiltration score (0.818). SMTP IP known malicious confirms malware delivery.
+D4182,Malicious,0.91,Sender spoofing with reply path known malicious and expired SSL. Document download with embedded files confirms distribution campaign.

@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4183,No Action,0.85,Low risk indicators across most signals with sender domain reputation 0.14 (moderate), failed authentication (DMARC fail) but no malicious attachments or known threats detected. High risk role not targeted and no urgent request type
+D4184,No Action,0.90,Very low sender domain reputation but all malicious indicators are zero. Passed SPF with valid TLS connection. Sensitive data request type but extremely low risk scores across all security signals indicate likely false positive
+D4185,Warning,0.75,Moderate suspicious signals including sender domain reputation 0.0001, max metadata suspicious score 0.147, and behavioral sandbox score 0.13. Meeting request type with failed DMARC but executable attachment not present
+D4186,Warning,0.80,Similar pattern to D4185 with moderate behavioral scores, VBScript detected, and failed authentication. Meeting request targeting but low overall malicious indicators suggest cautionary approach needed
+D4187,No Action,0.88,Clean profile with very low malicious indicators, passed SPF, and no suspicious request types. SSL mismatch noted but other security signals are minimal
+D4188,Malicious,0.92,Multiple high-risk indicators: IOC count 4, high exfiltration behavior score 0.368, legal threat request type, and high URL reputation concerns. Strong malicious pattern detected
+D4189,Malicious,0.95,Critical threat with executable attachment, ActiveX objects detected, very high exfiltration behavior score 0.57, and link click request type. Multiple malicious components present
+D4190,No Action,0.80,Moderate sender domain reputation but all attachment-based threats are zero. Bank detail update request but low confidence malicious indicators throughout
+D4191,Malicious,0.88,Return path mismatch, macro-enabled document, behavioral sandbox detection, and VPN/MFA reset request type. Multiple process execution indicators suggest targeted attack
+D4192,Malicious,0.93,Sender spoofing detected with high behavioral scores, wire transfer request type, and multiple suspicious SSL indicators. Clear financial fraud attempt
+D4193,Malicious,0.85,High sender domain reputation risk 0.347 with document download request type and elevated behavioral scores. URL count of 6 suggests potential phishing campaign
+D4194,No Action,0.82,Failed authentication but minimal malicious indicators and no active request types. Low confidence threat signals across most categories
+D4195,No Action,0.75,Moderate sender reputation issues with sensitive data request type but no malicious attachments or behavioral indicators detected
+D4196,Warning,0.70,High sandbox execution time 48.9 seconds with meeting request type suggests possible time-delayed payload. Final URL known malicious is concerning
+D4197,Warning,0.78,VBScript detection with embedded files and failed authentication. Low confidence but multiple suspicious indicators warrant monitoring
+D4198,No Action,0.85,High sender domain reputation 0.414 but expired SSL and minimal other risk indicators. URL count of 6 but no request type suggests bulk marketing
+D4199,Malicious,0.90,High behavioral scores, temp email likelihood 0.42, legal threat request type with unsubscribe present. Classic phishing pattern with urgency tactics
+D4200,Malicious,0.85,High exfiltration behavior score 0.785 with link click request type. Multiple security validation failures indicate active threat
+D4201,No Action,0.80,High return path reputation issue but URL shortener detected with bank detail update. Expired SSL but minimal active threat indicators
+D4202,Warning,0.72,ActiveX objects with VPN/MFA reset request type. PowerShell execution detected but low overall malicious scores suggest monitoring needed
+D4203,Malicious,0.88,High sender domain reputation risk 0.52 with temp email likelihood 0.74, wire transfer request, and embedded files. Clear BEC attempt
+D4204,Malicious,0.92,Multiple concerning indicators with document download request, high behavioral scores, and QR code present. Sophisticated attack vector
+D4205,No Action,0.78,High sender domain reputation but no specific request type and minimal active threat indicators. Marketing content likely
+D4206,No Action,0.80,Sensitive data request with failed authentication but very low malicious scores across all categories indicate false positive
+D4207,Malicious,0.85,IOC count of 8 with temp email likelihood 0.23, meeting request type, and multiple security failures. Coordinated attack pattern
+D4208,Warning,0.75,High sender domain reputation 0.87 with image-only email format. Bulk message indicator suggests potential gray-mail requiring monitoring
+D4209,No Action,0.88,Reply path known malicious flagged but all other indicators minimal. Clean authentication and no request types suggest automated flagging
+D4210,Malicious,0.94,Multiple high-risk indicators: IOC count 4, YARA match 1, high urgency keywords, legal threat type, and URL shortener. Sophisticated attack
+D4211,Warning,0.78,High temp email likelihood 0.14 with link click request but neutral DKIM status and minimal other threats suggest cautious approach
+D4212,No Action,0.82,High temp email likelihood 0.93 but bank detail update with minimal malicious indicators and valid SSL suggest legitimate business communication
+D4213,Malicious,0.87,High behavioral scores with VPN/MFA reset request type. DMARC enforcement present but multiple suspicious indicators override
+D4214,Warning,0.80,High metadata suspicious score 0.44 with wire transfer request and is_high_risk_role_targeted flag. Requires investigation
+D4215,Warning,0.75,DMARC enforced but document download request with high URL reputation concerns and failed DMARC result warrant monitoring
+D4216,No Action,0.85,Minimal active threat indicators despite failed authentication. High return path reputation but no request types suggest legitimate traffic
+D4217,No Action,0.80,Sensitive data request with embedded files but low malicious scores and expired SSL. Likely legitimate with security concerns
+D4218,Warning,0.78,Temp email likelihood 0.22 with meeting request and embedded files. High return path reputation suggests monitoring needed
+D4219,Warning,0.75,DMARC enforced with unscannable attachment and behavioral scores. Expired SSL and no request type but concerning indicators present
+D4220,No Action,0.82,High sender domain reputation but no request types and minimal threat indicators. Self-signed SSL concerning but not actionable
+D4221,Malicious,0.90,Sender spoofing with legal threat request type and high temp email likelihood 0.21. Return path known malicious confirms threat
+D4222,Malicious,0.88,High temp email likelihood 0.70 with ActiveX detection and link click request. Multiple security failures indicate active threat
+D4223,No Action,0.85,Bank detail update request but minimal malicious indicators and valid SSL suggest legitimate business communication
+D4224,Malicious,0.92,High metadata suspicious score 0.53 with temp email likelihood 0.56, VPN/MFA reset request, and PowerShell execution. Clear targeted attack
+D4225,Malicious,0.89,IOC count 8 with temp email likelihood 0.93, document download request, and QR code present. High behavioral scores confirm threat
+D4226,No Action,0.88,Temp email likelihood 0.026 with minimal threat indicators and valid SSL. Marketing keywords detected suggest legitimate communication
+D4227,No Action,0.85,Minimal threat indicators across all categories with self-signed SSL. No request types and clean behavioral scores
+D4228,No Action,0.80,URL count 3 with sensitive data request but minimal malicious indicators and valid SSL suggest legitimate business inquiry
+D4229,Warning,0.78,IOC count 5 with meeting request type and failed DMARC. Behavioral scores elevated but not critical threshold
+D4230,Warning,0.75,Malicious attachment count 2 with elevated metadata scores but failed DMARC and mismatch SSL require monitoring
+D4231,No Action,0.85,High temp email likelihood 0.22 but minimal active threats and valid SSL with URL count 2 suggest legitimate communication
+D4232,Malicious,0.90,Reply path known malicious with legal threat request type and IOC count 2. Multiple authentication failures confirm active threat

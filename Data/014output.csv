@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4083,No Action,0.82,Clean behavioral profile with low spam score and no malicious indicators. Valid SSL with passing SPF despite failed DKIM/DMARC suggests configuration issues rather than threat.
+D4084,Malicious,0.91,Known malicious sender with extreme metadata score (0.959) and AMSI detection (0.735). Legal threat request type with failed DMARC confirms targeted executive impersonation attack.
+D4085,Warning,0.75,Link click request with moderate sandbox score (0.261) and exfiltration behavior (0.523). Failed SPF with Acrobat execution warrants caution despite no malicious attachments.
+D4086,Spam,0.83,Bank detail update with extreme temporary email (0.519) and high return path issues (0.644). Certificate mismatch with QR code detected confirms financial fraud attempt.
+D4087,Malicious,0.95,Extreme metadata score (0.998) with PowerShell execution and VPN/MFA reset request. Self-signed SSL with marketing keywords detected confirms credential theft campaign.
+D4088,Warning,0.78,Multiple process executions (Excel, cmd, PowerShell) with high exfiltration score (0.682). Valid SSL but pattern suggests potentially unwanted activity requiring investigation.
+D4089,No Action,0.81,High sender reputation (0.714) with expired SSL but clean attachments. Reply path difference with passing SPF/DMARC suggests outdated infrastructure rather than threat.
+D4090,Malicious,0.88,Six YARA matches with self-signed SSL and high reply path reputation issues (0.991). Outlook execution with image-only email confirms sophisticated phishing.
+D4091,No Action,0.79,Gift card request with clean behavioral profile. Valid SSL with passing SPF and low risk scores suggest legitimate promotional content.
+D4092,No Action,0.77,Meeting request with minimal threat indicators. Failed SPF but valid SSL and low behavioral scores indicate email configuration issues.
+D4093,Spam,0.82,High spam content (0.782) with domain known malicious. Failed DKIM/SPF with softfail indicates bulk spam campaign rather than targeted attack.
+D4094,Warning,0.74,Self-signed SSL with IOC detected but low behavioral scores. Failed authentication trinity warrants monitoring despite minimal immediate threat.
+D4095,Malicious,0.87,Extreme metadata score (0.692) with PowerShell execution. Failed DMARC with moderate behavioral scores confirms malware delivery attempt.
+D4096,No Action,0.80,VPN/MFA reset with clean attachment profile. Valid SSL with passing SPF/DMARC despite failed DKIM suggests legitimate IT communication.
+D4097,No Action,0.76,Valid SSL with URL decoded spoof detected but minimal behavioral scores. Single URL with passing SPF indicates false positive on detection.
+D4098,Warning,0.73,Sender spoofing detected with return path known malicious. Failed SPF/DMARC but low scores suggest compromised account rather than active attack.
+D4099,No Action,0.84,Bank detail update with clean profile and valid SSL. Passing SPF with QR code analysis showing non-malicious indicates legitimate transaction.
+D4100,No Action,0.78,Invoice verification with softfail SPF but clean attachments. Valid SSL with low risk scores suggests legitimate business communication.
+D4101,No Action,0.85,Clean behavioral profile with HTML/text ratio detected. Valid SSL and passing SPF/DMARC confirms legitimate marketing email.
+D4102,Spam,0.81,Bank detail update with high SMTP geo-risk (0.685). Failed SPF with DMARC temperror indicates financial spam attempt.
+D4103,Warning,0.79,Gift card request with multiple process executions and two YARA matches. Valid SSL but moderate scores warrant careful monitoring.
+D4104,Malicious,0.92,Extreme metadata score (0.787) with network call on open detected. Multiple suspicious processes with failed DMARC confirms advanced malware.
+D4105,Malicious,0.86,High temporary email (0.712) with extreme exfiltration score (0.882). Failed DKIM/DMARC with Acrobat execution confirms phishing attack.
+D4106,No Action,0.75,Failed authentication but clean behavioral profile. Bulk message indicator with valid SSL suggests marketing email with poor configuration.
+D4107,Warning,0.71,Urgent callback with self-signed SSL and two URLs. Low risk scores but urgency keywords warrant verification of sender legitimacy.
+D4108,No Action,0.77,Clean profile with three URLs detected. Valid SSL with urgency keywords but passing SPF suggests legitimate urgent communication.
+D4109,Malicious,0.89,Return path and reply path known malicious with extreme exfiltration score (0.877). PowerShell execution with expired SSL confirms credential harvesting.
+D4110,Warning,0.72,Four URLs with self-signed SSL certificate. Clean behavioral scores but infrastructure concerns warrant caution.
+D4111,No Action,0.74,Expired SSL with high SMTP geo-risk (0.700) but clean attachments. Passing SPF with no behavioral concerns suggests outdated infrastructure.
+D4112,Spam,0.80,Gift card request with extreme URL reputation (0.917). Valid SSL but QR code detected with softfail SPF indicates promotional spam.
+D4113,No Action,0.76,Bank detail update with reply path difference but clean profile. Valid SSL with softfail SPF suggests configuration issues rather than threat.
+D4114,No Action,0.79,Clean behavioral profile with valid SSL. Passing SPF with DMARC temperror indicates email system configuration problems.
+D4115,Malicious,0.85,Malicious file hash detected with high temporary email (0.694). Four embedded files with Acrobat execution confirms malware distribution.
+D4116,Malicious,0.93,Unscannable attachment with extreme exfiltration score (0.992). Multiple suspicious processes with expired SSL confirms advanced persistent threat.
+D4117,Malicious,0.96,Known malicious sender with sender spoofing detected. AMSI score (0.767) with revoked SSL and URL decoded spoof confirms sophisticated attack.
+D4118,Malicious,0.94,Extreme metadata score (0.923) with return path mismatch. Wire transfer request with expired SSL and multiple processes confirms BEC attempt.
+D4119,No Action,0.73,Invoice verification with two URLs but clean profile. Expired SSL with failed SPF appears to be outdated system rather than threat.
+D4120,Malicious,0.90,High temporary email (0.810) with extreme metadata score (0.537). Wire transfer request with PowerShell execution confirms financial fraud.
+D4121,Malicious,0.88,High return path reputation issues (0.637) with self-signed SSL. Invoice payment request with multiple processes indicates payment fraud.
+D4122,Warning,0.76,Multiple suspicious processes including mshta and wscript. Self-signed SSL with urgent callback but moderate scores suggest monitoring needed.
+D4123,Warning,0.74,VPN/MFA reset with PowerShell execution but low behavioral scores. Failed SPF with valid SSL warrants verification of legitimacy.
+D4124,No Action,0.80,Clean profile with valid SSL and passing authentication. Low risk scores across all indicators confirm legitimate communication.
+D4125,Malicious,0.87,Known malicious sender with high temporary email (0.526). Return path reputation issues (0.708) with suspicious processes confirm attack.
+D4126,Malicious,0.91,IOC detected with extreme reply path reputation (0.941). Multiple suspicious processes with URL reputation issues confirms malware campaign.
+D4127,No Action,0.77,Legal threat with four URLs but clean behavioral profile. Valid SSL with passing SPF suggests legitimate legal communication.
+D4128,Malicious,0.82,Known malicious sender with document download request. Despite minimal other indicators, sender reputation alone confirms threat actor activity.
+D4129,Warning,0.80,Six URLs detected with gift card request. Failed SPF but valid SSL and moderate scores suggest potentially unwanted rather than malicious.
+D4130,Malicious,0.89,High exfiltration score (0.801) with multiple suspicious processes. Self-signed SSL with failed authentication trinity confirms advanced attack.
+D4131,Warning,0.72,High sender reputation (0.745) but SMTP IP known malicious. Failed authentication with urgent callback warrants investigation.
+D4132,Malicious,0.92,Sender spoofing with extreme exfiltration score (0.684). Four YARA matches with failed authentication confirms sophisticated malware.
